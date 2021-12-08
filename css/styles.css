@@ -21,6 +21,7 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 /* header */
 
 /* logo */
@@ -63,13 +64,17 @@ ul {
 .header-page {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 
   height: 80px;
 
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+.header-border {
+  border-bottom: 1px solid#ececec;
+}
+
 .contacts-list {
   display: flex;
   margin: auto;
@@ -169,7 +174,7 @@ ul {
   background-color: #2f303a;
   align-items: center;
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 
 .hero-tittle-decision {
@@ -181,6 +186,7 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  margin: 0;
   /* padding-top: 200px;
   padding-bottom: 280px; */
 }
@@ -196,6 +202,17 @@ ul {
   padding: 10px 32px;
   margin: 30px auto 0 auto;
 }
+
+.five-buttons {
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+
+.button:hover,
+:focus {
+  color: var(--primery-white-color);
+  background: var(--accent-color);
+}
 .button {
   cursor: pointer;
   font-family: Roboto;
@@ -204,9 +221,14 @@ ul {
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
-  background-color: #2196f3;
   border: transparent;
 }
+.button {
+  width: 73px;
+  height: 38px;
+  border-radius: 4px;
+}
+
 .buttons-secondary {
   display: flex;
   justify-content: center;
@@ -236,11 +258,6 @@ ul {
   background-color: #f5f4fa;
   color: #212121;
   padding: 6px 22px;
-}
-.button {
-  width: 73px;
-  height: 38px;
-  border-radius: 4px;
 }
 
 .button-portfolio-one {
@@ -278,14 +295,15 @@ ul {
   padding-bottom: 94px;
 }
 .prioritets {
-  color: #212121;
+  color: var(--title-text-color);
   font-family: Roboto;
-  font-weight: Bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   text-align: left;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin: 0;
 }
 .tech-tittle {
   font-family: Roboto;
@@ -297,15 +315,17 @@ ul {
 }
 .work {
   font-family: Roboto;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 .our-work {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .team {
   background-color: #f5f4fa;
@@ -315,7 +335,7 @@ ul {
 
 .team-tittle {
   font-family: Roboto;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
   text-align: center;
@@ -323,6 +343,8 @@ ul {
   color: #212121;
 
   text-align: center;
+
+  margin: 0;
 }
 
 .name {
@@ -333,6 +355,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-top: 30;
 }
 .proffession {
   font-family: Roboto;
@@ -378,11 +401,12 @@ ul {
   text-decoration: none;
 }
 .contacts-tittle {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .contacts-tittle-link {
   color: rgba(255, 255, 255, 0.6);
-  padding: 9px;
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
 /* Portfolio */
@@ -426,15 +450,25 @@ ul {
   padding-bottom: 30px;
 }
 /* СЕТКА КАРТОЧЕК ПОРТФОЛИО */
+
+/* СЕТКА КАРТОЧЕК ПОРТФОЛИО */
 .proects-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
   justify-content: space-between;
   box-sizing: border-box;
 }
-.border {
+
+/*  margin-bottom: 30px;
+  justify-content: space-between; */
+.card {
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}
+
+.card > .border {
+  padding-top: 20;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
