@@ -432,7 +432,7 @@ ul {
   color: #757575;
 }
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -461,8 +461,9 @@ ul {
 .proects-list {
   display: flex;
   flex-wrap: wrap;
-
   box-sizing: border-box;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 .card {
   width: 370px;
@@ -477,4 +478,8 @@ ul {
 }
 .border {
   padding: 20px 24px;
+
+  border-right: 1px solid#eeee;
+  border-left: 1px solid#eeee;
+  border-bottom: 1px solid#eeee;
 }
