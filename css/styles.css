@@ -338,9 +338,8 @@ ul {
   color: #212121;
 
   text-align: center;
-
-  margin: 0;
-  padding-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .name {
@@ -422,6 +421,7 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
+  margin: 0;
 }
 .works {
   font-family: Roboto;
@@ -430,6 +430,7 @@ ul {
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: #757575;
+  margin: 0;
 }
 .container {
   width: 1200px;
